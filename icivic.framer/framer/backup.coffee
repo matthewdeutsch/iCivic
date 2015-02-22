@@ -89,5 +89,5 @@ spinner.on Events.AnimationStop, ->
 		properties:
 			x: report_item.x + 500
 		time: .3
-		curve: "spring(100, 10, 0)"
+		curve: "spring(200, 15, 10)"
 	
