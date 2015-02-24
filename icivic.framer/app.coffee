@@ -57,7 +57,7 @@ report_submit.on Events.TouchEnd, ->
 			y: report.y - 1000
 			opacity: 0
 		curve: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-		time: 1
+		time: .5
 
 	report_list.visible = true
 	report_list.animate
@@ -70,13 +70,12 @@ report_submit.on Events.TouchEnd, ->
 		properties:
 			opacity: 1
 		time: 1
-		delay: .2
 	
 	spinner.animate
 		properties:
 			opacity: 1
 		delay: .5
-		time: 1.3
+		time: 1.7
 	
 spinner.on Events.AnimationStop, ->
 	spinner.opacity = 0
@@ -88,6 +87,6 @@ spinner.on Events.AnimationStop, ->
 	report_item.animate
 		properties:
 			x: report_item.x + 500
-		time: .3
+		time: .5
 		curve: "spring(200, 15, 10)"
 	
